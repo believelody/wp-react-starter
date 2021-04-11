@@ -14,7 +14,7 @@ import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 
 const Cart = () => {
-  const stripePromise = loadStripe("pk_test_sktCphIJjvZVIDseE3EIgULO")
+  const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY)
   const { t } = useTranslation()
   const {
     contextCheckout: [{ cart }]

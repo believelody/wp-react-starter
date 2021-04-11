@@ -286,7 +286,7 @@ const CartLeftPanel = () => {
                                 <PaypalExpressBtn
                                     env="sandbox"
                                     client={{
-                                        sandbox: "AeUSjGLmKrqD8AoBuL_fSjzBi9imy302gy4NwUw1MmJVF6o5UXObwXVcSOPMZ95l7ORPa-jR2drlDw-X",
+                                        sandbox: process.env.REACT_APP_PAYPAL_SANDBOX,
                                         production: ""
                                     }}
                                     currency="EUR"

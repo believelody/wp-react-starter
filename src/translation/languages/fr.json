@@ -1,0 +1,368 @@
+{
+    "actions": {
+        "loading": "Patientez svp...",
+        "button": {
+            "yes": "Oui",
+            "no": "Non",
+            "confirm": "Confirmer",
+            "validate": "Valider",
+            "delete": "Supprimer",
+            "remove": "Supprimer",
+            "cancel": "Annuler",
+            "addAddress": "Ajouter une adresse",
+            "changeAddress": "Changer d'adresse"
+        },
+        "modal": {
+            "auth": {
+                "title": "Connexion"
+            },
+            "cart": {
+                "removeItem": {
+                    "title": "Confirmer l'action",
+                    "body": "Voulez-vous vraiment supprimer cet article ?"
+                }
+            },
+            "address": {
+                "add": {
+                    "title": "Ajouter une addresse"
+                },
+                "isBillingSameAsShipping": "Utiliser cette adresse pour l'adresse de facturation ?"
+            },
+            "payment": {
+                "success": {
+                    "text": "Votre paiement a bien été reçu, nous vous avons envoyé un mail de confirmation. Nous préparons dès à présent votre commande.",
+                    "ending": "A très bientôt",
+                    "link": "Aller à la page d'accueil"
+                },
+                "fail": {
+                    "text": "Le paiement a échoué. Nous vous conseillons de changer de moyen de paiement ou d'essayer à nouveau.",
+                    "btn": "Retour au panier"
+                },
+                "loading": "Nous procédons au paiement, veuillez patienter s'il vous plait.",
+                "error": "Une erreur inconnue s'est produit, fermer cette fenêtre de dialogue et réessayer s'il vous plait."
+            }
+        },
+        "toast": {
+            "success": {
+                "auth": {
+                    "login": "Salut {{name}}, content de vous retrouver parmi nous.",
+                    "register": "Bienvenue parmis nous {{name}} ! N'hésitez pas à compléter ton profil dans votre espace client. Aussi, jetez un coup d'oeil à notre blog et nos articles !",
+                    "verified": "Félicitations {{name}}, votre compte est bien vérifié."
+                },
+                "product": {
+                    "added": "Vous avez ajouté {{name}} avec succès dans votre panier.",
+                    "updated": "Vous avez modifié la quantité de {{name}} avec succès."
+                },
+                "cart": {
+                    "updateQuantity": "Vous avez modifié la quantité de ce produit",
+                    "removeItem": "Ce produit a été retiré avec succès"
+                }
+            },
+            "error": {
+                "uncategorized": "Une erreur est survenue lors de l'action"
+            }
+        }
+    },
+    "languages": {
+        "fr": "Français (FR)",
+        "en": "Anglais (EN)"
+    },
+    "auth": {
+        "guest": "Voici les informations nécessaires pour terminer votre achat en tant qu'invité",
+        "notLogged": "Vous n'êtes pas connecté.\nPourriez-vous prendre 5sec pour vous connecter ?",
+        "createAccount": "Vous voulez créer un compte ? Rien de plus simple.\nRemplissez ce formulaire.",
+        "otherAccountInfo": "Vous compléterez les informations additionnelles plus tard dans votre espace client",
+        "forgottenPassword": "Mot de passe oublié ? Pas de panique, tapez votre email et nous vous envoyons un lien de réinitialisation.",
+        "verificationCode": {
+            "title": "Confirmez votre compte",
+            "subtitle": "Vous devez vérifier votre compte afin de pouvoir accéder à votre compte.",
+            "resend": "Renvoyer le code",
+            "codeResent": "Nous venons de vous renvoyer le code de vérification par mail"
+        },
+        "form": {
+            "label": {
+                "gender": {
+                    "male": "Je suis un homme",
+                    "female": "Je suis une femme"
+                },
+                "email": "Email *",
+                "confirmEmail": "Confirmer votre email *",
+                "name": "Noms / Prénoms *",
+                "username": "Nom d'utilisateur *",
+                "password": "Mot de passe *",
+                "confirmPassword": "Confirmer votre mot de passe *",
+                "phoneNumber": "Numéro de téléphone (facultatif)",
+                "code": "Code de vérification"
+            },
+            "placeholder": {
+                "email": "Ex: nomprenom@gmail.com",
+                "confirmEmail": "Il doit être identique à votre email",
+                "name": "Ecrivez vos nom(s) et prénom(s)",
+                "username": "Ecrivez votre nom d'utilisateur",
+                "password": "Ecrivez votre mot de passe",
+                "confirmPassword": "Il doit être identique à votre mot de passe",
+                "phoneNumber": "Précéder le numéro par l'indicatif. Ex: France (+33)",
+                "code": "Ex: 123456"
+            },
+            "text": {
+                "gender": "Cette information nous permettra de mieux vous cibler votre besoin.",
+                "username": "Le nom d'utilisateur est unique et inchangeable.",
+                "password": "Le mot de passe doit contenir au moins: 6 caractères, 1 chiffre et 1 majuscule.",
+                "phoneNumber": "Il sera uniquement communiqué au livreur.",
+                "code": "Entrez le code de vérification à 6 chiffres reçu par mail."
+            },
+            "submit": {
+                "login": "Se connecter",
+                "register": "Créer mon compte",
+                "forgottenPassword": "Réinitialiser mot de passe",
+                "guest": "Créer mon profil invité"
+            },
+            "errors": {
+                "valueMissing": {
+                    "name": "Veuillez indiquer votre nom",
+                    "username": "Veuillez indiquer votre nom d'utilisateur",
+                    "email": "Veuillez indiquer votre email",
+                    "password": "Veuillez indiquer votre mot de passe",
+                    "confirmEmail": "Veuillez indiquer l'email de confirmation",
+                    "confirmPassword": "Veuillez indiquer le mot de passe de confirmation"
+                },
+                "typeMismatch": {
+                    "email": "La valeur saisie n'a pas le format email: john@doe.com",
+                    "confirmEmail": "La valeur saisie n'a pas le format email: john@doe.com"
+                },
+                "patternMismatch": {
+                    "password": "Le mot de passe doit contenir au moins 1 majuscule et 1 chiffre"
+                },
+                "tooShort": {
+                    "password": "Le mot de passe doit avoir 6 caractères minimum"
+                },
+                "alreadyExist": {
+                    "username": "Oups, ce nom d'utilisateur est déjà pris. Nous vous invitons à en choisir un autre.",
+                    "email": "Oups, cet email existe déjà. Nous vous invitons à en utiliser un autre."
+                },
+                "invalid": {
+                    "email": "Cet email est invalide",
+                    "password": "Le mot de passe est incorrect",
+                    "code": "Le code de vérification est incorrect"
+                },
+                "diff": {
+                    "email": "Les emails sont différents",
+                    "password": "Les mots de passe sont différents"
+                }
+            }
+        },
+        "switch": {
+            "login": "Déjà un compte ? Connectez vous.",
+            "register": "Vous n'avez pas de compte ? Créez-le en seulement 15sec, promis",
+            "forgottenPassword": "Mot de passe oublié ? Cliquez ici pour le réinitialiser."
+        }
+    },
+    "address": {
+        "nothing": {
+            "text": "Aucune addresse connue, veuillez en créer une.",
+            "btn": "Créer une addresse"
+        },
+        "billing": "Adresse de facturation",
+        "shipping": "Adresse de livraison",
+        "bothSame": "Adresse de livraison/facturation",
+        "address1": "Adresse *",
+        "address2": "Information complémentaire (facultatif)",
+        "postcode": "Code Postal *",
+        "city": "Ville *",
+        "country": "Pays *"
+    },
+    "navbar": {
+        "categories": "Catégories",
+        "blog": "Le blog",
+        "about": "A propos de Nous",
+        "search": {
+            "btnLabel": "Rechercher",
+            "placeholder": "Rechercher un article par son nom"
+        },
+        "account": {
+            "tooltip": {
+                "logged": "Mon Compte",
+                "notLogged": "Se connecter"
+            }
+        }
+    },
+    "categories": {
+        "title": "Catégories",
+        "item": "Article",
+        "items": "Articles",
+        "woman": "Femme",
+        "man": "Homme"
+    },
+    "cart": {
+        "title": "L'aventure commence maintenant",
+        "accordion": {
+            "cartResume": {
+                "label": "Résumé de votre panier",
+                "subtitle": "Cliquez ici pour voir le résumé de votre panier"
+            },
+            "shippingMethods": {
+                "label": "Méthodes de livraison",
+                "subtitle": "Cliquez ici pour voir les options de livraisons",
+                "choice": "Livraison choisie",
+                "fees": "Coût de la livraison",
+                "methods": {
+                    "standardFlatRate": "Livraison standard 6-12 jours",
+                    "expressFlatRate": "Livraison express 3 jours",
+                    "standardRelayRate": "Livraison point relay 6-12 jours"
+                }
+            },
+            "paymentMethods": {
+                "label": "Moyen de paiement",
+                "subtitle": "Cliquez ici pour voir les moyens de paiements",
+                "methods": {
+                    "stripe": "Paiement par Carte Bancaire",
+                    "paypal": "Utiliser Paypal"
+                },
+                "stripe": {
+                    "process": "Vos informations bancaires vous seront demandées après avoir cliqué sur le bouton \" Confirmer le paiement\".",
+                    "number": "Numéro de la carte",
+                    "name": "Nom du détenteur de la carte",
+                    "expiry": "MM/YY",
+                    "cvc": "CVC",
+                    "error": {
+                        "incomplete_number": "Le numéro de la carte est incomplet",
+                        "invalid_number": "Votre numéro de carte n'est pas valide",
+                        "name": "Le nom du détenteur est requis",
+                        "incomplete_expiry": "La date d'expiration de votre carte est incomplète.",
+                        "invalid_expiry_year_past": "L'année d'expiration de votre carte est passée.",
+                        "invalid_expiry_month_past": "La date d'expiration de votre carte est passée.",
+                        "incomplete_cvc": "Le code de sécurité de votre carte est incomplet."
+                    }
+                },
+                "paypal": {
+                    "process": "Vous continuerez avec le processus de paiement de Paypal lors que vous cliquerez sur \"Confirmer le paiement\""
+                }
+            },
+            "identity": {
+                "label": "Votre identité",
+                "subtitle": "Cliquez ici pour vérifier votre identité",
+                "name": "Vous êtes: ",
+                "email": "Votre adresse email: ",
+                "phoneNumber": "Votre numéro de téléphone: ",
+                "noPhoneNumber": "Non renseigné",
+                "notLogged": {
+                    "text": "Vous n'êtes pas connecté.Pourriez-vous prendre 5sec pour vous connecter ?",
+                    "btn": "Je me connecte",
+                    "registerLink": "Vous n'avez pas de compte ? Créez-le en seulement 15sec, promis"
+                },
+                "guest": "Continuer en tant qu'invité"
+            }
+        },
+        "label": "Panier",
+        "header": "Total",
+        "totalProducts": "Total Articles",
+        "totalProductsPrice": "Prix total articles",
+        "totalCart": "Panier total",
+        "confirmPayment": "Confirmer paiement",
+        "empty": {
+            "title": "Panier vide",
+            "text": "Il n'y a actuellement aucun produit dans le panier",
+            "link": "Faire mes achats !!!"
+        }
+    },
+    "checkout": {
+        "address": {
+            "bothSame": "Adresses de livraison et de facturation identiques.",
+            "bothDiff": "Adresses de livraison et de facturation différentes."
+        },
+        "user": {
+            "text": "Vous êtes authentifié, nous vous souhaitons un bon achat.",
+            "warning": {
+                "title": "Attention, votre email n'est pas encore validé. Pensez à regardez vos mails.",
+                "btn": "Me renvoyer le lien de validation"
+            }
+        },
+        "guest": {
+            "text": "Vous êtes connecté en tant qu'invité",
+            "warning": {
+                "title": "Voici les raisons pour lesquels nous vous conseillons de créer votre compte:",
+                "list": "- identité sauvegardée/ - accès aux nombreuses promos et réductions/ - suivi et détails de vos commandes en quelques clics"
+            }
+        },
+        "errors": {
+            "title": "Il nous manque les éléments suivants avant de continuer :",
+            "noShipping": "Adresse de livraison. (Voir 2. Méthodes de livraison)",
+            "noCard": "Informations bancaires. (Voir 3. Moyen de paiement)",
+            "notLogged": "Votre identité. Connectez-vous en 5sec. (Voir 4. Identité)",
+            "guestEditing": "Validation de votre identité. Appuyez sur le bouton Créer mon profil invité"
+        }
+    },
+    "products": {
+        "quantity": "Quantité",
+        "variant": "Taille",
+        "unitPrice": "Prix unitaire",
+        "item": {
+            "viewBtn": "Voir",
+            "quickBuy": "Achat rapide",
+            "instantPay": "Paiement instantané"
+        },
+        "single": {
+            "chooseVariation": "choisissez une variante",
+            "updateProduct": "mettre à jour le produit",
+            "addToCart": "ajouter au panier",
+            "addingToCart": "...ajout dans le panier en cours",
+            "description": "Description",
+            "chart": "Guide des tailles",
+            "reviews": "Avis"
+        },
+        "error": {
+            "overMaxQuantity": "Vous ne pouvez choisir plus de {{maxQuantity}} articles"
+        }
+    },
+    "entrust": {
+        "stripe": "carte bancaire",
+        "paypal": "paypal",
+        "ssl": "protection ssl",
+        "secure": "sécurisation 3d",
+        "carrier": {
+            "title": "Partenaires avec plusieurs services de livraisons"
+        },
+        "shipping": {
+            "title": "Plusieurs options de livraisons",
+            "standardFlatRate": "Standard 6-12 jours",
+            "expressFlatRate": "Express 3 jours",
+            "standardRelayRate": "Point relay 6-12 jours"
+        }
+    },
+    "promo": {
+        "toast": {
+            "success": "Votre coupon a bien été appliqué",
+            "error": {
+                "undefined": "Une erreur est survenue",
+                "notFound": "Aucun coupon n'a été trouvé avec ce code",
+                "notExist": "Ce code ne correspond à aucun coupon",
+                "alreadyApplied": "Ce coupon a déjà été appliqué à votre panier" ,
+                "expired": "Oups, ce coupon est déjà expiré"
+            }
+        },
+        "placeholder": "Ex: MYCODEPROMO"
+    },
+    "email": {
+        "contact": "L'équipe WeLiftUP",
+        "signature": "Nous vous souhaite d'agréables moments sur notre plateforme.<br />A très bientôt.<br />L'équipe {{link}}",
+        "footer": "",
+        "register": {
+            "subject": "Création de votre compte",
+            "header": "{{greetings}} {{name}} et bienvenue dans la team WeLiftUP",
+            "message": "Tout d'abord, merci de votre inscription. Nous vous confirmons que votre compte a bien été créé. Voici le code de vérification de votre email: {{code}}. Saisissez-le dès maintenant et profitez de notre site web sans restriction. Aussi, 10% de réduction vous sont offert lorsque votre compte est vérifié. A vous de jouer, et surtout...transpirez ;) ."
+        }
+    },
+    "footer": {
+        "menu": "Besoin d'informations ?",
+        "newsletter": "Abonnez-vous à notre newsletter",
+        "contact": "Contactez-nous",
+        "social": "Suivez-nous"
+    },
+    "routes": {
+        "home": "Accueil",
+        "cart": "Panier",
+        "categories": "Catégories",
+        "woman": "Femme",
+        "man": "Homme"
+    }
+}

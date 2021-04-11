@@ -1,0 +1,42 @@
+
+.spinner-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-loading {
+    width: 200px !important;
+    height: 200px !important;
+    position: absolute;
+}
+
+.loading-text {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.arrow-animate {
+    position: absolute;
+    -webkit-animation: 1s linear 0.5s infinite alternate liftup;
+    animation: 1s linear 0.5s infinite alternate liftup;
+}
+
+@-webkit-keyframes liftup {
+    to {
+        margin-top: -15px;
+    }
+}
+
+@keyframes liftup {
+    to {
+        margin-top: -15px;
+    }
+}

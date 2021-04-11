@@ -1,0 +1,14 @@
+.title-big {
+    transition: linear 0.3s;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.title-normal {
+    transition: linear 0.3s;
+    font-size: 20px;
+}
+
+.subtitle-text {
+    font-size: 12px;
+}

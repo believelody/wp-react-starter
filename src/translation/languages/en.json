@@ -1,0 +1,336 @@
+{
+    "actions": {
+        "loading": "Please wait...",
+        "button": {
+            "yes": "Yes",
+            "no": "No",
+            "confirm": "Confirm",
+            "validate": "Validate",
+            "delete": "Delete",
+            "remove": "Remove",
+            "cancel": "Cancel",
+            "addAddress": "Add an address",
+            "changeAddress": "Change address"
+        },
+        "modal": {
+            "auth": {
+                "title": "Login"
+            },
+            "cart": {
+                "removeItem": {
+                    "title": "Confirm action",
+                    "body": "Do you really want to remove this item ?"
+                }
+            },
+            "address": {
+                "add": {
+                    "title": "Add an adress"
+                },
+                "isBillingSameAsShipping": "Use this address as billing address ?"
+            }
+        },
+        "toast": {
+            "success": {
+                "auth": {
+                    "login": "Hi there! Happy to see you",
+                    "register": "Welcome {{name}}. Feel free to complete your profile information in your dashboard account. Check our blog and our products too !",
+                    "verified": "Congrats {{name}}, your account has been verified."
+                },
+                "product": {
+                    "added": "You successfully added {{name}}-{{variationValue}} in your cart",
+                    "updated": "You successfully updated {{name}} quantity"
+                },
+                "cart": {
+                    "updateQuantity": "You updated this product quantity",
+                    "removeItem": "You successfully removed this product from your cart"
+                }
+            },
+            "error": {
+                "uncategorized": "Something wrong happened"
+            }
+        }
+    },
+    "languages": {
+        "fr": "French (FR)",
+        "en": "English (EN)"
+    },
+    "auth": {
+        "guest": "Before make your purchase, please fill information below",
+        "notLogged": "You seem not connected.\nWould you mind take 5sec to login ?",
+        "createAccount": "Wanna create an account ? Too easy.\nPlease fill this form.",
+        "otherAccountInfo": "You will fill other information later in your dashboard",
+        "forgottenPassword": "You forgot your password ? Don't worry, type your email and we will send you a reset link.",
+        "verificationCode": {
+            "title": "Confirm your account",
+            "subtitle": "You have to verify your account in order to access to your account.",
+            "resend": "Resend code",
+            "codeResent": "We just sent you a new verification code by email."
+        },
+        "form": {
+            "label": {
+                "gender": {
+                    "male": "I am a man",
+                    "female": "I am a woman"
+                },
+                "email": "Email *",
+                "confirmEmail": "Confirm email *",
+                "name": "Firstname / Lastname *",
+                "username": "Username *",
+                "password": "Password *",
+                "confirmPassword": "Confirm password *",
+                "phoneNumber": "Phone number (optional)"
+            },
+            "placeholder": {
+                "email": "Eg: firstname.lastname@yahoo.fr",
+                "confirmEmail": "Must be identical than email",
+                "name": "Type your firstname(s) and lastname(s) please",
+                "username": "Type your username please",
+                "password": "Type your password",
+                "confirmPassword": "Must be identical thant password",
+                "phoneNumber": "Please type first your telephone code. Eg: Ffrance (+33)"
+            },
+            "text": {
+                "gender": "This information will help us to better solve your needs.",
+                "username": "Username is unique and cannot be changed.",
+                "password": "Your password must contain at least : 6 characters, 1 number and 1 uppercase letter.",
+                "phoneNumber": "Only given to carrier.",
+                "code": "Type 6 digitsa verification code we sent you by email."
+            },
+            "submit": {
+                "login": "Sign in",
+                "register": "Create my account",
+                "forgottenPassword": "Reset password",
+                "guest": "Create my guest profile"
+            },
+            "errors": {
+                "valueMissing": {
+                    "name": "Please fill your name",
+                    "username": "Please fill your username",
+                    "email": "Please fill your email",
+                    "password": "Please fill your password",
+                    "confirmEmail": "Please fill your confirm email",
+                    "confirmPassword": "Please fill your confirm password"
+                },
+                "typeMismatch": {
+                    "email": "The value typed doesn't match with email format: abc@def.gh",
+                    "confirmEmail": "The value typed doesn't match with email format: abc@def.gh"
+                },
+                "patternMismatch": {
+                    "password": "Password must contain at least 1 uppercase letters and 1 number"
+                },
+                "tooShort": {
+                    "password": "Password must contain 6 characters minimum"
+                },
+                "alreadyExist": {
+                    "username": "Oops, this username is already taken. Please, choose another one.",
+                    "email": "Oops, this email already exists. Please, use another one."
+                },
+                "invalid": {
+                    "email": "This email is invalid",
+                    "password": "This password is incorrect",
+                    "code": "Incorrect verification code"
+                },
+                "diff": {
+                    "email": "Both emails are not same",
+                    "password": "Both passwords are not same"
+                }
+            }
+        },
+        "switch": {
+            "login": "Alreay an account ? Please sign in.",
+            "register": "Don't have an account ? Create your in just 15sec, we promise !",
+            "forgottenPassword": "Forgot your password ? Click here to reset it."
+        }
+    },
+    "address": {
+        "nothing": {
+            "text": "No address, please click the button and create one.",
+            "btn": "Create an address"
+        },
+        "billing": "Billing address",
+        "shipping": "Shipping address",
+        "bothSame": "Shipping/billing address",
+        "address1": "Address *",
+        "address2": "Additional information (optional)",
+        "postcode": "Zip code *",
+        "city": "City *",
+        "country": "Country *"
+    },
+    "categories": {
+        "title": "Categories",
+        "item": "Item",
+        "items": "Items",
+        "woman": "Woman",
+        "man": "Man"
+    },
+    "navbar": {
+        "categories": "Categories",
+        "blog": "Blog",
+        "about": "About Us",
+        "search": {
+            "btnLabel": "Search",
+            "placeholder": "Search a product by name"
+        },
+        "account": {
+            "tooltip": {
+                "logged": "My Account",
+                "notLogged": "Sign in"
+            }
+        }
+    },
+    "cart": {
+        "title": "The journey start NOW !",
+        "accordion": {
+            "cartResume": {
+                "label": "Your cart resume",
+                "subtitle": "Click here to see your cart resume"
+            },
+            "shippingMethods": {
+                "label": "Shipping methods",
+                "subtitle": "Click here to see shipping methods",
+                "choice": "Selected shipping",
+                "fees": "Shipping fees",
+                "methods": {
+                    "standardFlatRate": "Standard delivery 6-12 days",
+                    "expressFlatRate": "Express delivery 3 days",
+                    "standardRelayRate": "Delivery in relay point"
+                }
+            },
+            "paymentMethods": {
+                "label": "Payment methods",
+                "subtitle": "Click here to see payment methods",
+                "methods": {
+                    "stripe": "Credit card Payment",
+                    "paypal": "Use Paypal"
+                },
+                "stripe": {
+                    "process": "Credit card information will be needed after clicked on \"Confirm payment\".",
+                    "number": "Card number",
+                    "name": "Card owner's name",
+                    "expiry": "MM/YY",
+                    "cvc": "CVC",
+                    "error": {
+                        "incomplete_number": "Card number is incomplete",
+                        "invalid_number": "Your card number is invalid",
+                        "name": "Card owner's name is required",
+                        "incomplete_expiry": "Your card expiration date is incomplete.",
+                        "invalid_expiry_year_past": "Your card expiration year is already past.",
+                        "invalid_expiry_month_past": "Your card expiration date is already past.",
+                        "incomplete_cvc": "Your security code is incomplete."
+                    }
+                },
+                "paypal": {
+                    "process": "You will process with Paypal when you will click on \"Confirm payment\"."
+                }
+            },
+            "identity": {
+                "label": "Your identity",
+                "subtitle": "Click here to check your identity",
+                "name": "You are: ",
+                "email": "Your email address: ",
+                "phoneNumber": "Your phone number: ",
+                "noPhoneNumber": "Not specified",
+                "notLogged": {
+                    "text": "You seem not connected.Would you mind take 5sec to login ?",
+                    "btn": "I sign in",
+                    "registerLink": "Don't have an account ? Create your in just 15sec, we promise !"
+                },
+                "guest": "Continue as guest"
+            }
+        },
+        "label": "Cart",
+        "header": "Total",
+        "totalProducts": "Total Items",
+        "totalProductsPrice": "Total items price",
+        "shipping": "Shipping",
+        "totalCart": "Total in Cart",
+        "confirmPayment": "Confirm payment",
+        "empty": {
+            "title": "Empty cart",
+            "text": "There are no products",
+            "link": "Start shopping NOW !"
+        }
+    },
+    "checkout": {
+        "address": {
+            "bothSame": "Shipping and billing addresses are same",
+            "bothDiff": "Shipping and billing addresses are different"
+        },
+        "user": {
+            "text": "You are logged in, we wish you an happy purchase.",
+            "warning": {
+                "title": "Your email is not validated yet. Please mind check your email.",
+                "btn": "Resend me validation link"
+            }
+        },
+        "guest": {
+            "text": "You are logged in as guest",
+            "warning": {
+                "title": "These are reasons why we suggest you to create an account :",
+                "list": "- identity saved/ - access to various promotions and discounts/ - track and orders details in few clic"
+            }
+        },
+        "errors": {
+            "title": "Followings information are needed before continuing the procedure",
+            "noShipping": "Shipping address. (Check 2. Shipping methods)",
+            "noCard": "Credit card information. (Check 3. Payment methods)",
+            "notLogged": "Your identity. Please, login in 5sec. (Check 4. Identity)"
+        }
+    },
+    "products": {
+        "quantity": "Quantity",
+        "variant": "Size",
+        "unitPrice": "Unit Price",
+        "item": {
+            "viewBtn": "View",
+            "quickBuy": "Quick Buy",
+            "instantPay": "Instant Pay"
+        },
+        "single": {
+            "chooseVariation": "choose a variation",
+            "updateProduct": "update product",
+            "addToCart": "add to cart",
+            "addingToCart": "...adding product to cart",
+            "description": "Description",
+            "chart": "Chart size",
+            "reviews": "Reviews"
+        },
+        "error": {
+            "overMaxQuantity": "You cannot choose more than {{value}} items"
+        }
+    },
+    "entrust": {
+        "creditCard": "credit card",
+        "paypal": "paypal",
+        "ssl": "ssl encryption",
+        "secure": "3d Secure",
+        "carrier": {
+            "title": "Partnership with recommended carriers"
+        },
+        "shipping": {
+            "title": "Many shipping options",
+            "standardFlatRate": "Standard 6-12 days",
+            "expressFlatRate": "Express 3 days",
+            "standardRelayRate": "Relay point"
+        }
+    },
+    "promo": {
+        "toast": {
+            "success": "Your coupon has been successfully applied ",
+            "error": {
+                "undefined": "Something went wrong",
+                "notFound": "No coupon found with this code",
+                "notExist": "This code doesn't match any coupon",
+                "alreadyApplied": "This coupon has been already applied on your cart",
+                "expired": "Oops, this ecoupon has already expired"
+            }
+        },
+        "placeholer": "Eg: MYCODEPROMO"
+    },
+    "footer": {
+        "menu": "Need some information ?",
+        "newsletter": "Subscribe to our newsletter",
+        "contact": "Contact us",
+        "social": "Follow us"
+    }
+}

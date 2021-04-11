@@ -1,0 +1,12 @@
+.icon-size {
+    height: 200px !important;
+    width: 200px !important;
+}
+
+.icon-success {
+color: green;
+}
+
+.icon-fail {
+color: red;
+}

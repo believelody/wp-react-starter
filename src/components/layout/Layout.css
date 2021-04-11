@@ -1,0 +1,22 @@
+.layout {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout .box-1 {
+    height: auto;
+}
+.layout .box-2 {
+    height: 100%;
+    flex: 1;
+}
+.layout .box-3 {
+    height: auto;
+}

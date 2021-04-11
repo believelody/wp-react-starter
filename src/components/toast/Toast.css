@@ -1,0 +1,38 @@
+.toast-card {
+    max-width: 700px;
+}
+
+.toast-card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#fixed-arrow-cart {
+    position: fixed !important;
+    right: 5.2em;
+    top: 130px;
+    font-size: 24px;
+    animation: bounce 0.75s ease infinite alternate;
+}
+
+#fixed-arrow-account {
+    position: fixed !important;
+    right: 0.7em;
+    top: 130px;
+    font-size: 24px;
+    animation: bounce 0.75s ease infinite alternate;
+}
+
+
+@keyframes bounce {
+    from {transform: translate3d(0, 0, 0)}
+    to {transform: translate3d(0, -75px, 0)}
+}

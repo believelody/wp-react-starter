@@ -1,0 +1,1 @@
+export const makeUrl = path => `http://localhost/wordpress/wp-json/wc/v2/${path}?consumer_key=${process.env.REACT_APP_WC_CONSUMER_KEY}&consumer_secret=${process.env.REACT_APP_WC_CONSUMER_SECRET}`

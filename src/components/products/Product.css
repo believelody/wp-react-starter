@@ -1,0 +1,32 @@
+.li-item {
+    height: 300px;
+}
+
+.dropdown-size {
+    width: 400px;
+}
+
+.product-item-col {
+    min-width: 320px !important;
+}
+
+.product-item-col div {
+    overflow: hidden;
+
+}
+
+.product-item-img {
+    transition: 400ms linear;
+}
+
+.product-item-img:hover {
+    transform: scale(1.15);
+}
+
+.icon-entrust-big {
+    font-size: 52px;
+}
+
+.icon-entrust-middle {
+    font-size: 28px;
+}

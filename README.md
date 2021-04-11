@@ -1,3 +1,20 @@
+next:
+- more products (wordpress) (done)
+- categories (done)
+- entrust + more single product page content (done)
+- fill left panel info (done)
+- simulate guest payment (rename in design guest payment) (done)
+- change toast notification (done)
+- authentication (done)
+- design a new toast (done)
+- promo and discount form design (done)
+- breadcrumb (done)
+- checkout + test payment
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

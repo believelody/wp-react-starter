@@ -1,0 +1,14 @@
+.jumbo {
+    max-width: 900px;
+}
+
+.left-panel {
+    position: sticky !important;
+    top: 72px;
+    height: auto;
+    width: 378px;
+}
+
+.small-text {
+    font-size: 11px;
+}

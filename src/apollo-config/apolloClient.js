@@ -1,9 +1,17 @@
 import { InMemoryCache, ApolloClient, ApolloLink, createHttpLink } from '@apollo/client';
 import clientConfig from './config';
+import decode from 'jwt-decode'
 
 const httpLink = createHttpLink({
     uri: clientConfig.graphqlUrl,
 });
+
+// Token expiry check
+const isTokenExpired = authToken => {
+    const date = new Date(0)
+    date.setUTCSeconds(decode(authToken).exp)
+    return authToken ? Date.now() - date > 172100 : true
+}
 
 /**
  * Middleware operation
@@ -15,11 +23,18 @@ export const middleware = new ApolloLink((operation, forward) => {
      */
     const session = localStorage.getItem('woo-session');
     if (session) {
-        operation.setContext(({ headers = {} }) => ({
-            headers: {
-                'woocommerce-session': `Session ${session}`,
-            }
-        }));
+        if (isTokenExpired(session)) {
+            localStorage.removeItem('woo-session')
+            // console.log('Session is expired!!!')
+        } else {
+            // console.log('Found valid Token.')
+
+            operation.setContext(({ headers = {} }) => ({
+                headers: {
+                    'woocommerce-session': `Session ${session}`,
+                },
+            }))
+        }
     }
 
     return forward(operation);

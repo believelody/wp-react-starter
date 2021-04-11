@@ -12,7 +12,7 @@ import CategorySinglePage from "./pages/CategorySinglePage"
 import NotFound from "./components/not-found/NotFound"
 
 const App = () => {
-  console.log(window.location.href)
+
   return (
     <BrowserRouter basename="/wordpress">
       <AppProvider>

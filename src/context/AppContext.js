@@ -56,29 +56,30 @@ export const AppProvider = props => {
         history.replace("/")
     }
 
-    const [refreshJwtAuthToken, { data }] = useMutation(REFRESH_TOKEN_MUTATION, {
-        variables: {
-            input: refreshJwtAuthTokenInput(auth.refreshToken)
-        },
-        onError: error => console.log(JSON.stringify(error))
-    })
+    // const [refreshJwtAuthToken, { data }] = useMutation(REFRESH_TOKEN_MUTATION, {
+    //     variables: {
+    //         input: refreshJwtAuthTokenInput(auth.refreshToken)
+    //     },
+    //     onError: error => console.log(JSON.stringify(error))
+    // })
 
-    const refreshAuth = useCallback(error => {
-        if (error.message === "Expired token" || error?.debugMessage?.includes("invalid-jwt")) {
-            console.log(error);
-            refreshJwtAuthToken()
-            if (data) {
-                updateAuth({ token: data?.refreshJwtAuthToken.authToken })
-                return true
-            }
-            return false
-        }
-    }, [data, refreshJwtAuthToken])
+    // const refreshAuth = useCallback(error => {
+    //     if (error.message === "Expired token" || error?.debugMessage?.includes("invalid-jwt")) {
+    //         console.log(error);
+    //         refreshJwtAuthToken()
+    //         if (data) {
+    //             updateAuth({ token: data?.refreshJwtAuthToken.authToken })
+    //             return true
+    //         }
+    //         return false
+    //     }
+    //     console.log("test");
+    // }, [data, refreshJwtAuthToken])
     
     useEffect(() => {
-        if (!checkout.cart && !checkout.billing && !checkout.shipping && localStorage.getItem("woo-checkout")) {
-            setCheckout(JSON.parse(localStorage.getItem("woo-checkout")))
-        }
+        if (JSON.stringify(INITIAL_CHECKOUT) !== localStorage.getItem("woo-checkout") && !checkout.cart && !checkout.billing && !checkout.shipping && localStorage.getItem("woo-checkout")) {
+                setCheckout(JSON.parse(localStorage.getItem("woo-checkout")))
+            }
     }, [checkout])
 
     useEffect(() => {
@@ -93,7 +94,7 @@ export const AppProvider = props => {
     return (
         <AppContext.Provider
             value={{
-                contextAuth: [auth, {updateAuth, logout, refreshAuth}],
+                contextAuth: [auth, {updateAuth, logout}],
                 contextModal: [modal, setModal],
                 contextToast: [toast, setToast],
                 contextLoading: [loading, setLoading],
